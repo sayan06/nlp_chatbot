@@ -9,5 +9,5 @@ stemmer   = PorterStemmer()
 for i in range(len(sentences)):
     words = nltk.word_tokenize(sentences[i])
     words = [stemmer.stem(word) for word in words if word not in set(stopwords.words('english'))]
-    sentences[i] = ' '.join(words)
-    print(sentences[i])
+    #sentences[i] = ' '.join(words)
+    print(words)
